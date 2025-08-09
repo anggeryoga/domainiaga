@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Save, AlertTriangle, Bell, Globe, DollarSign } from 'lucide-react'
-import { supabase } from '../../lib/supabase'
+import { supabase, Domain } from '../../lib/supabase'
 import { useAuth } from '../../contexts/AuthContext'
 import LoadingSpinner from '../../components/ui/LoadingSpinner'
 import toast from 'react-hot-toast'
@@ -8,7 +8,7 @@ import toast from 'react-hot-toast'
 const AdminSettings: React.FC = () => {
   const { admin } = useAuth()
   const [loading, setLoading] = useState(false)
-  const [expiringDomains, setExpiringDomains] = useState([])
+  const [expiringDomains, setExpiringDomains] = useState<Domain[]>([])
   const [settings, setSettings] = useState({
     site_name: 'DomainLuxe',
     site_description: 'Platform terpercaya untuk jual beli domain premium',
