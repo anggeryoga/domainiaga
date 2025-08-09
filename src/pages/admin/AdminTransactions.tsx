@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { 
   Search, 
-  Filter, 
   Eye, 
   CheckCircle, 
   XCircle, 
   Clock,
-  Download,
   RefreshCw
 } from 'lucide-react'
 import { supabase, Transaction } from '../../lib/supabase'
