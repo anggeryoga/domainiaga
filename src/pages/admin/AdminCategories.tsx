@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Plus, Edit, Trash2, Globe, AlertTriangle } from 'lucide-react'
+import { Plus, Edit, Trash2, Globe } from 'lucide-react'
 import { supabase, DomainCategory } from '../../lib/supabase'
 import LoadingSpinner from '../../components/ui/LoadingSpinner'
 import toast from 'react-hot-toast'
